@@ -1,0 +1,142 @@
+/* sintaxis basica */
+/* selectores */
+/* selector de etiqueta */
+/* h1 {
+    color: aqua;
+} */
+
+/* selectores de clase */
+/* .titulo {
+    color: brown;
+} */
+
+/* selector de ID */
+/* #tituloUnico {
+    color: blueviolet;
+} */
+
+/* colores y fondos */
+.background-en-linea {
+  background-color: blueviolet;
+}
+
+.container {
+  background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjU0NmJhdGNoMy1teW50LTM0LWJhZGdld2F0ZXJjb2xvcl8xLmpwZw.jpg);
+}
+
+.titulo {
+  color: aqua;
+  background-color: black;
+  margin: 50px;
+  padding: 10px;
+  border: 5px solid red;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+/* texto y fuentes */
+
+/* 
+UNIDAD DE MEDIDA EXACTA
+px: pixeles
+*/
+
+.container-titulo {
+  /* tamaño */
+  font-size: 100px;
+  /* grosor */
+  font-weight: 200;
+  /* color */
+  color: blue;
+}
+
+.container-parrafo {
+  font-size: 40px;
+  /* align */
+  text-align: justify;
+}
+
+/* BOX MODEL (MODELO DE CAJA) */
+
+.container {
+  /* ancho */
+  width: 1000px;
+  /* altura */
+  height: 600px;
+  /* padding */
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding: 20px 40px 60px 80px;
+  /* border */
+  border-color: black;
+  border-width: 10px;
+  border-style: solid;
+  border: 20px solid black;
+  /* margin */
+  margin-top: 100px;
+  margin-left: 200px;
+  margin: 100px 40px 60px 200px;
+}
+
+.contenedor-flex {
+  height: 700px;
+  /* flex, inline-flex */
+  display: flex;
+  /* row (fila), column (columna), row-reverse, column-reverse */
+  flex-direction: row;
+  /* justify-content (distribuir elementos en horizontal y en vertical en caso de ser column) */
+  /* flex-start, flex-end, center, space-between, space-around, space-evenly */
+  justify-content: flex-start;
+
+  /* align-items (distribuir elementos en vertical y en horizontal en caso de ser column) */
+  /* flex-start, flex-end, center, stretch, baseline */
+  align-items: flex-start;
+
+  /* flex-wrap (en caso de no alcanzar en ancho, manda el elemento final a la siguiente linea) */
+  /* wrap, nowrap, wrap-reverse */
+  flex-wrap: wrap;
+
+  /* align-content (alinear cuando hay varias lineas en un elemento) */
+  align-content: flex-start;
+}
+
+.item-flex {
+  background: #ffacac;
+  padding: 20px;
+  border-radius: 20px;
+  /* flex-grow (especificar cuanto queremos que ocupe nuestro
+   elemento en base a la cantidad de hermanos que tengamos) */
+  /* flex-grow: 1; */
+}
+
+.item-flex1 {
+  /* flex-grow: 1; */
+  /* ordenar elementos */
+  order: 1;
+}
+
+.item-flex2 {
+  order: 3;
+}
+
+.item-flex3 {
+  order: 1;
+}
+
+.item-flex4 {
+  order: 2;
+}
+
+/* Home */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
