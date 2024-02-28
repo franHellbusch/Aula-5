@@ -130,13 +130,77 @@ px: pixeles
 }
 
 /* Home */
+/* font */
+/* Family: Anta y Kode Mono */
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Kode+Mono:wght@400..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Kode Mono", monospace;
 }
 
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: #fdc2c2;
+  padding: 10px 0;
+}
+
+.header_title {
+  font-family: "Anta", sans-serif;
+  font-size: 25px;
+}
+
+.header_navigation {
+  display: flex;
+  gap: 40px;
+}
+
+.header_navigation > a {
+  /* quita el estilo por defecto de los links */
+  text-decoration: none;
+  color: black;
+}
+
+.contact_button {
+  background: #5050f4;
+  border: 0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+/* main */
+
+/* presentation */
+main {
+  background: #fcecec;
+  height: 1000px;
+}
+
+.presentation_section {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.presentation_section > img {
+  width: 600px;
+  margin-right: 20px;
+}
+
+.presentation_content {
+  width: 700px;
+}
+
+.presentation_content > h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.presentation_content > p {
+  font-size: 18px;
 }

@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  /* especificar cantidad y tamaños de las columnas */
+  grid-template-columns: auto auto auto auto;
+  /* especificar cantidad y tamaños de las filas */
+  grid-template-rows: 200px 200px 200px 200px;
+  /* crear template */
+  grid-template-areas:
+    "navigation header header header"
+    "navigation productos publicidad publicidad"
+    "navigation servicios publicidad publicidad"
+    "navigation footer footer footer";
+
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.nav {
+  background: red;
+  grid-area: navigation;
+  display: flex;
+}
+
+.header {
+  background: green;
+  grid-area: header;
+}
+
+.productos {
+  background: yellow;
+  grid-area: productos;
+}
+
+.servicios {
+  background: blue;
+  grid-area: servicios;
+}
+
+.publicidad {
+  background: violet;
+  grid-area: publicidad;
+}
+
+.footer {
+  background: yellowgreen;
+  grid-area: footer;
+}
