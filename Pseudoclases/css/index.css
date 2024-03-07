@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* pseudoclases */
+.button {
+  width: 100px;
+  height: 50px;
+  background: red;
+  border: 0;
+  border-radius: 20px;
+  margin: 100px;
+  cursor: pointer;
+}
+
+/* Hover: pasar el cursor por encima del elemento */
+.button:hover {
+  background: green;
+  border: 2px solid black;
+}
+
+/* Active: cuando se esta clickeando el elemento */
+.button:active {
+  background: violet;
+}
+
+.input {
+  background: red;
+  border: 0;
+  outline: 0;
+}
+
+/* Cuando esta el elemento seleccion o haciendo focus */
+.input:focus {
+  background: green;
+  outline: 2px solid red;
+}
+
+/* nth-child: permite seleccionar la etiqueta especifica en la posicion indicada en relacion a su padre */
+/* tambien nos permite darle especificacion como: par o impar */
+.lista > li:nth-child(4) {
+  color: yellow;
+}
+
+.lista > li:nth-child(odd) {
+  background: red;
+}
+
+.lista > li:nth-child(even) {
+  background: green;
+}
+
+/* last-child (ultimo hijo) y first-child (primer hijo) */
+.lista > li:last-child {
+  background: yellow;
+}
+
+.lista > li:first-child {
+  background: blue;
+}
