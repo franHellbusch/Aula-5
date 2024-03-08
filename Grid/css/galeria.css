@@ -5,71 +5,69 @@
 
 .galeria {
   display: grid;
-
   grid-template-columns: auto auto auto;
-  grid-template-rows: 400px 400px 400px 400px;
-
+  grid-template-rows: 500px 500px 500px 500px;
   grid-template-areas:
-    "image1 image2 image3"
-    "image4 image4 image3"
-    "image5 image6 image7"
-    "image5 image8 image8";
-
+    "img1 img2 img3"
+    "img4 img4 img3"
+    "img5 img6 img7"
+    "img5 img8 img8";
   gap: 10px;
+  background: red;
   padding: 10px;
-  background: #ffd3d3;
 }
 
-.galeria_image_1,
-.galeria_image_2,
-.galeria_image_3,
-.galeria_image_4,
-.galeria_image_5,
-.galeria_image_6,
-.galeria_image_7,
-.galeria_image_8 {
-  border-radius: 5px;
+.galeria_item_1 {
+  grid-area: img1;
+  background-image: url(../assets/galeria-image-1.jpg);
+}
+
+.galeria_item_2 {
+  grid-area: img2;
+  background-image: url(../assets/galeria-image-2.jpg);
+}
+
+.galeria_item_3 {
+  grid-area: img3;
+  background-image: url(../assets/galeria-image-3.jpg);
+}
+
+.galeria_item_4 {
+  grid-area: img4;
+  background-image: url(../assets/galeria-image-4.jpg);
+}
+
+.galeria_item_5 {
+  grid-area: img5;
+  background-image: url(../assets/galeria-image-5.jpg);
+}
+
+.galeria_item_6 {
+  grid-area: img6;
+  background-image: url(../assets/galeria-image-6.jpg);
+}
+
+.galeria_item_7 {
+  grid-area: img7;
+  background-image: url(../assets/galeria-image-7.jpg);
+}
+
+.galeria_item_8 {
+  grid-area: img8;
+  background-image: url(../assets/galeria-image-8.jpg);
+}
+
+.galeria_item_1,
+.galeria_item_2,
+.galeria_item_3,
+.galeria_item_4,
+.galeria_item_5,
+.galeria_item_6,
+.galeria_item_7,
+.galeria_item_8 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.galeria_image_1 {
-  grid-area: image1;
-  background-image: url(../assets/galeria-imagen-1.jpg);
-}
-
-.galeria_image_2 {
-  grid-area: image2;
-  background-image: url(../assets/galeria-imagen-2.jpg);
-}
-
-.galeria_image_3 {
-  grid-area: image3;
-  background-image: url(../assets/galeria-imagen-3.jpg);
-}
-
-.galeria_image_4 {
-  grid-area: image4;
-  background-image: url(../assets/galeria-imagen-4.jpg);
-}
-
-.galeria_image_5 {
-  grid-area: image5;
-  background-image: url(../assets/galeria-imagen-5.jpg);
-}
-
-.galeria_image_6 {
-  grid-area: image6;
-  background-image: url(../assets/galeria-imagen-6.jpg);
-}
-
-.galeria_image_7 {
-  grid-area: image7;
-  background-image: url(../assets/galeria-imagen-7.jpg);
-}
-
-.galeria_image_8 {
-  grid-area: image8;
-  background-image: url(../assets/galeria-imagen-8.jpg);
+  border-radius: 10px;
+  border: 2px solid black;
 }

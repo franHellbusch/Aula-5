@@ -3,59 +3,69 @@
   padding: 0;
 }
 
-/* pseudoclases */
+/* Pseudoclases */
 .button {
-  width: 100px;
-  height: 50px;
-  background: red;
+  margin: 200px;
+  background: #fc9b9b;
   border: 0;
-  border-radius: 20px;
-  margin: 100px;
+  border-radius: 10px;
+  padding: 20px;
   cursor: pointer;
 }
 
-/* Hover: pasar el cursor por encima del elemento */
+/* hover: aplica estilos cuando el usuario pasa el cursor por encima */
 .button:hover {
   background: green;
-  border: 2px solid black;
+  border-radius: 50%;
 }
 
-/* Active: cuando se esta clickeando el elemento */
+/* active: cuando el usuario activa un elemento, ej: clickear un boton */
 .button:active {
-  background: violet;
+  background: blue;
+  border: 5px solid green;
 }
 
+/* focus: se aplican estilos cuando un elemento esta enfocado, ej: input */
 .input {
-  background: red;
+  background: #fc9b9b;
   border: 0;
   outline: 0;
 }
 
-/* Cuando esta el elemento seleccion o haciendo focus */
+/* selecciona el placeholder */
+.input::placeholder {
+  color: red;
+}
+
 .input:focus {
   background: green;
-  outline: 2px solid red;
 }
 
-/* nth-child: permite seleccionar la etiqueta especifica en la posicion indicada en relacion a su padre */
-/* tambien nos permite darle especificacion como: par o impar */
-.lista > li:nth-child(4) {
-  color: yellow;
+.lista {
+  list-style: none;
 }
 
-.lista > li:nth-child(odd) {
+/* selecciona el primer elemento hijo li de lista */
+.lista > li:first-child {
   background: red;
 }
 
-.lista > li:nth-child(even) {
+/* selecciona el ultimo elemento hijo li de lista */
+.lista > li:last-child {
   background: green;
 }
 
-/* last-child (ultimo hijo) y first-child (primer hijo) */
-.lista > li:last-child {
+/* nth-child */
+.lista > li:nth-child(10) {
+  background: orange;
+}
+
+/* elementos impares */
+.lista > li:nth-child(odd) {
   background: yellow;
 }
 
-.lista > li:first-child {
+/* elementos pares */
+.lista > li:nth-child(even) {
   background: blue;
 }
