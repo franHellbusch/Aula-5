@@ -1,0 +1,164 @@
+/* de 1200px a 0px */
+@media (max-width: 1200px) {
+  /* header */
+  header {
+    padding: 20px;
+  }
+
+  .header_title > h1 {
+    font-size: 25px;
+  }
+
+  .navigation {
+    gap: 25px;
+  }
+
+  .navigation > a {
+    font-size: 14px;
+  }
+
+  .header_buttons > button:nth-child(1) {
+    margin: 0 20px;
+  }
+
+  .header_buttons > button:nth-child(2) {
+    padding: 8px 15px;
+  }
+
+  /* home */
+  .home {
+    padding: 100px 20px;
+  }
+
+  .home_presentation {
+    margin-right: 40px;
+  }
+
+  .home_presentation > h2 {
+    font-size: 50px;
+  }
+
+  .home_presentation > p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+
+  .home_presentation > button {
+    padding: 15px 20px;
+  }
+
+  .home > img {
+    width: 30%;
+  }
+
+  /* service */
+  .service {
+  }
+}
+
+/* 900px a 0px */
+@media (max-width: 900px) {
+  /* header */
+  .navigation {
+    gap: 15px;
+  }
+
+  .header_buttons > button:nth-child(1) {
+    margin: 0 15px;
+  }
+
+  .header_buttons > button:nth-child(2) {
+    padding: 8px 10px;
+  }
+
+  /* home */
+  .home_presentation {
+    margin-right: 30px;
+  }
+
+  .home_presentation > h2 {
+    font-size: 40px;
+  }
+
+  .home_presentation > p {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+
+  .home_presentation > button {
+    padding: 12px 15px;
+  }
+
+  .home > img {
+    width: 35%;
+  }
+}
+
+/* 768px a 0px */
+@media (max-width: 768px) {
+  /* header */
+  .navigation,
+  .header_buttons {
+    display: none;
+  }
+
+  .menu_hamburger {
+    display: block;
+    width: 35px;
+  }
+
+  /* home */
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  .home_presentation {
+    margin-right: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home > img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* 480px a 0px */
+@media (max-width: 480px) {
+  /* header */
+  header {
+    padding: 15px;
+  }
+
+  .header_title > h1 {
+    font-size: 22px;
+  }
+
+  .menu_hamburger {
+    width: 30px;
+  }
+
+  /* home */
+  .home_presentation > h2 {
+    font-size: 30px;
+  }
+
+  .home_presentation > p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .home_presentation > button {
+    padding: 10px 12px;
+  }
+}

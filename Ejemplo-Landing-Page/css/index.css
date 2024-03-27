@@ -74,6 +74,10 @@ header {
   background: #76e579;
 }
 
+.menu_hamburger {
+  display: none;
+}
+
 /* Home section */
 .home {
   background: #f5f7fa;
